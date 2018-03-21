@@ -1,0 +1,19 @@
+#Business config
+emailAddress: "no-reply@ingini.org"
+
+#Ops config
+server:
+#  softNofileLimit: 1000
+#  hardNofileLimit: 1000
+  applicationConnectors:
+    - type: http
+      port: 9980
+  adminConnectors:
+    - type: http
+      port: 9981
+
+logging:
+  level: INFO
+  loggers:
+    org.ingini.kubecat: DEBUG
+
